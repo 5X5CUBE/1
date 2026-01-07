@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>판 뉴스 메인</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f6f7;
+      font-size: 14px;
+    }
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      color: #e60023;
+    }
+    .card-img-overlay {
+      background: linear-gradient(to top, rgba(0,0,0,.6), transparent);
+    }
+    .card-img-overlay p {
+      font-size: 13px;
+    }
+    .sidebar-title {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .badge-area span {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white border-bottom py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- 로고 -->
+    <div class="logo">Project</div>
+
+    <!-- 검색 -->
+    <div class="d-flex gap-2 align-items-end">
+      <select class="form-select form-select-sm" style="width:90px">
+        <option>전체</option>
+        <option>연애</option>
+        <option>여행</option>
+        <option>일상</option>
+      </select>
+      <input type="text" class="form-control form-control-sm" placeholder="검색어 입력">
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="container my-4">
+  <div class="row">
+
+    <!-- ===== CENTER ===== -->
+    <section class="col-lg-8">
+
+      <!-- 상단 카드 영역 -->
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="https://picsum.photos/400/260?1" class="card-img">
+            <div class="card-img-overlay d-flex align-items-end">
+              <p class="m-0">인기 게시물1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="https://picsum.photos/400/260?2" class="card-img">
+            <div class="card-img-overlay d-flex align-items-end">
+              <p class="m-0">인기 게시물2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="https://picsum.photos/400/260?3" class="card-img">
+            <div class="card-img-overlay d-flex align-items-end">
+              <p class="m-0">인기게시물 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 게시글 리스트 -->
+      <ul class="list-group list-group-flush bg-white rounded shadow-sm">
+        <li class="list-group-item">
+          <strong>순천 플랑하우스 오픈 방문 후기</strong>
+          <div class="text-muted small">카페 · 3시간 전</div>
+        </li>
+        <li class="list-group-item">
+          <strong>2026년 새해 일러스트 모음</strong>
+          <div class="text-muted small">디자인 · 5시간 전</div>
+        </li>
+        <li class="list-group-item">
+          <strong>연차 쓰고 다녀온 2박 3일 여행</strong>
+          <div class="text-muted small">여행 · 1일 전</div>
+        </li>
+        <li class="list-group-item">
+          <strong>요즘 핫한 카페 인테리어</strong>
+          <div class="text-muted small">일상 · 2일 전</div>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="col-lg-4">
+
+      <!-- 추천 -->
+      <div class="mb-4">
+        <img src="https://picsum.photos/400/200?4" class="img-fluid rounded shadow-sm">
+      </div>
+
+      <!-- 지역 -->
+      <div class="bg-white p-3 rounded shadow-sm mb-4">
+        <div class="sidebar-title">지역별</div>
+        <div class="badge-area d-flex flex-wrap gap-2">
+          <span class="badge bg-light text-dark">서울</span>
+          <span class="badge bg-light text-dark">경기</span>
+          <span class="badge bg-light text-dark">인천</span>
+          <span class="badge bg-light text-dark">부산</span>
+          <span class="badge bg-light text-dark">대구</span>
+          <span class="badge bg-light text-dark">제주</span>
+        </div>
+      </div>
+
+      <!-- 게시판 메뉴 -->
+      <div class="bg-white rounded shadow-sm">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">공지사항</li>
+          <li class="list-group-item">인기 게시물</li>
+          <li class="list-group-item">일반 게시물</li>
+          <li class="list-group-item">내가 쓴 글</li>
+          <li class="list-group-item">스크랩</li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
