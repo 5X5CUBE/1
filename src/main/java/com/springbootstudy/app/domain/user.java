@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class user {
-	private String userId, userName, userPass, userAdd, userPhone,gender;
-	private LocalDate birthday;
+	private String userId, username, password, address, phone,gender,nickname;
+	private LocalDate birthday,rdate;
 
 }

@@ -6,10 +6,10 @@
 	
 	<insert id="addUser" parameterType="user">
     INSERT INTO member (
-        user_id, user_name, user_pass, user_add,   user_phone,  gender,  birthday
+        user_id, username,nickname ,password, address,phone,  gender,  birthday,rdate
     )
     VALUES (
-        #{userId}, #{userName}, #{userPass}, #{userAdd},  #{userPhone},  #{gender}, #{birthday}
+        #{userId}, #{username},#{nickname}, #{password}, #{address},  #{phone},  #{gender}, #{birthday},#{rdate}
     )
 </insert>
 	
