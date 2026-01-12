@@ -11,9 +11,4 @@ public class mainController {
     public String mainPage() {
         return "views/mainhome"; 
     }
-    
-    @GetMapping("/joinMember")
-    public String joinMemberPage() {
-        return "views/joinMember"; 
-    }
 }
